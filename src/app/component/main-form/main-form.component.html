@@ -1,0 +1,20 @@
+<div class="p-4">
+    <div class="row">
+      <div class="col-3">
+        <div class="bg-light p-4 mb-4">
+          <employees-drop-down (onEmployeeChanged)="employeeChanged($event)"></employees-drop-down>
+        </div>
+        <div class="bg-light p-4">
+          <departments-tree (onDepartmentClicked)="departmentClicked($event)"></departments-tree>
+        </div>
+      </div>
+  
+      <div class="col-6">
+        <div class="bg-light p-4">
+          <tasks-table [tableTitle]="tableTitle"></tasks-table>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  

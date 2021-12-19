@@ -1,0 +1,7 @@
+[
+    {"EmployeeName" : "Employee1", "EmployeePicture" : "./assets/pictures/Employee1.png"},
+    {"EmployeeName" : "Employee2", "EmployeePicture" : "./assets/pictures/Employee2.png"},
+    {"EmployeeName" : "Employee3", "EmployeePicture" : "./assets/pictures/Employee3.png"},
+    {"EmployeeName" : "Employee4", "EmployeePicture" : "./assets/pictures/Employee4.png"},
+    {"EmployeeName" : "Employee5", "EmployeePicture" : "./assets/pictures/Employee5.png"}
+]

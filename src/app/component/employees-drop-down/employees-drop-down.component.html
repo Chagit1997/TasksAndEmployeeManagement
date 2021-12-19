@@ -1,0 +1,10 @@
+<div class="form-group">
+  <div class="font-weight-bolder">Choose employee:</div>
+<mat-form-field class="w-100">
+    <mat-select (selectionChange)="employeeChanged($event.value)">
+      <mat-option *ngFor="let employee of employeeList" [value]="employee.EmployeeName">
+        <img class="p" src='{{employee.EmployeePicture}}'> {{employee.EmployeeName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

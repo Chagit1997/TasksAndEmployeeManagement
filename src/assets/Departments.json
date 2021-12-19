@@ -1,0 +1,14 @@
+
+[
+    {"DepartmentID" : "1", "DepartmentName" : "Department 1", "ParentID": "0"},
+    {"DepartmentID" : "2", "DepartmentName" : "Department 2", "ParentID": "0"},
+    {"DepartmentID" : "3", "DepartmentName" : "Department 1.1", "ParentID": "1"},
+    {"DepartmentID" : "4", "DepartmentName" : "Department 1.2", "ParentID": "1"},
+    {"DepartmentID" : "5", "DepartmentName" : "Department 1.3", "ParentID": "1"},
+    {"DepartmentID" : "6", "DepartmentName" : "Department 1.4", "ParentID": "1"},
+    {"DepartmentID" : "7", "DepartmentName" : "Department 1.3.1", "ParentID": "5"},
+    {"DepartmentID" : "8", "DepartmentName" : "Department 1.3.2", "ParentID": "5"},
+    {"DepartmentID" : "9", "DepartmentName" : "Department 1.3.3", "ParentID": "5"},
+    {"DepartmentID" : "10", "DepartmentName" : "Department 1.2.1", "ParentID": "4"},
+    {"DepartmentID" : "11", "DepartmentName" : "Department 2.1", "ParentID": "2"}
+]

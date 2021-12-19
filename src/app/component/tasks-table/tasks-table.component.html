@@ -1,0 +1,47 @@
+<h1>{{tableTitle}}</h1>
+
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+      <ng-container matColumnDef="TaskNumber">
+        <th mat-header-cell *matHeaderCellDef> Task number </th>
+        <td mat-cell *matCellDef="let element"> {{element.TaskNumber}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="TaskName">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.TaskName}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="StatusID">
+        <th mat-header-cell *matHeaderCellDef> StatusID </th>
+        <td mat-cell *matCellDef="let element"> {{element.StatusID}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="EmployeeName">
+        <th mat-header-cell *matHeaderCellDef> EmployeeName </th>
+        <td mat-cell *matCellDef="let element"> {{element.EmployeeName}} </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="DepartmentID">
+        <th mat-header-cell *matHeaderCellDef> DepartmentID </th>
+        <td mat-cell *matCellDef="let element"> {{element.DepartmentID}} </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="DueDate">
+        <th mat-header-cell *matHeaderCellDef> DueDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.DueDate}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'bg-danger': checkDate(row.DueDate)}"></tr>
+    </table>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 15, 20]"
+                    #paginator
+                   showFirstLastButtons 
+                   aria-label="Select page of periodic elements">
+    </mat-paginator>
+  </div>
